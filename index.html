@@ -176,6 +176,8 @@ blockquote { margin: 0 0 18px; padding-left: 18px; border-left: 2px solid var(--
 .shot:hover { border-color: var(--sage); }
 .shot img { display: block; width: 100%; max-width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px; background: var(--vitrine); }
 .shot img.contain { object-fit: contain; }
+.gallery figure.wide { grid-column: 1 / -1; }
+.gallery figure.wide .shot img { aspect-ratio: auto; height: auto; }
 .empty-shot { cursor: default; aspect-ratio: 4 / 3; display: grid; place-items: center; border: 1px dashed var(--ink-2); background: transparent; }
 .empty-shot:hover { border-color: var(--ink-2); }
 .empty-shot svg { width: 40px; height: 40px; fill: none; stroke: var(--ink-2); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; opacity: 0.7; }
@@ -451,7 +453,9 @@ footer { display: grid; gap: 20px; }
 /* Image gallery: one list for all years, newest first. Add photos as
    { year: 2026, src: "img/file.jpg", caption: "text" }; add fit: "contain" to show a photo uncropped.
    While the list is empty, the gallery shows placeholder frames. */
-var PHOTOS = [];
+var PHOTOS = [
+  { year: 2024, src: "img/2024-recipients-group.jpg", caption: "The 2024 award recipients with their certificates and crystal trophies, together with faculty and alumni of the 2004–08 batch", wide: true }
+];
 var PLACEHOLDERS = 4;   /* empty frames shown until photos are added */
 
 var AWARDS = [
@@ -514,6 +518,7 @@ PHOTOS.forEach(function (p) {
   var img = document.createElement("img");
   img.src = p.src; img.alt = p.caption; img.loading = "lazy";
   if (p.fit === "contain") img.className = "contain";
+  if (p.wide) fig.className = "wide";
   b.appendChild(img);
   b.addEventListener("click", function () { openLb(p); });
   fig.appendChild(b);
@@ -523,7 +528,7 @@ PHOTOS.forEach(function (p) {
   fig.appendChild(cap);
   grid.appendChild(fig);
 });
-if (!PHOTOS.length) {
+if (PLACEHOLDERS > 0) {
   for (var i = 0; i < PLACEHOLDERS; i++) {
     var ph = el("figure", "placeholder");
     var frame = el("div", "shot empty-shot");
