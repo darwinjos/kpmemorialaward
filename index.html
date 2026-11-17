@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KP Memorial Award</title>
+<meta name="description" content="The KP Memorial Award, in memory of Krishnaprasad KT (1987–2008), honours deserving Mechanical Engineering students at NSS College of Engineering, Palakkad with the High Flyer and High Runner awards.">
+<link rel="canonical" href="https://www.kpmemorialaward.com/">
+<meta property="og:title" content="KP Memorial Award">
+<meta property="og:description" content="In memory of Krishnaprasad KT (1987–2008). The High Flyer and High Runner awards for Mechanical Engineering students at NSSCE, Palakkad.">
+<meta property="og:url" content="https://www.kpmemorialaward.com/">
+<meta property="og:image" content="https://www.kpmemorialaward.com/apple-touch-icon.png">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout concept: a kasavu cloth. Unbleached handloom ivory as the page, one fine brass double line as the woven border,
+   sage for the few things you act on, mist blue for the High Flyer and laterite clay for the High Runner.
+   Light by default, with a matching evening palette for dark mode. */
+:root {
+  --bg: #F7F4EC;           /* kasavu ivory */
+  --card: #FFFDF8;
+  --ink: #2B2F2A;          /* 12.4:1 on bg */
+  --ink-2: #5C635A;        /* 5.6:1 */
+  --hair: #DDD6C8;         /* decorative dividers only */
+  --sage: #4F6B58;         /* accent, 5.3:1 */
+  --sage-wash: #E8EEE6;
+  --flyer: #4A6A86;        /* mist blue, 5.2:1 */
+  --flyer-wash: #E6EDF3;
+  --runner: #A0583C;       /* laterite clay, 4.8:1 */
+  --runner-wash: #F5E8E1;
+  --gold: #B08D57;         /* decorative kasavu line only */
+  --brass: #8A6A35;        /* text-safe gold, 4.6:1, used at 18px+ */
+  --vitrine: #1F2420;      /* dark frame for the crystal trophy photo */
+  --on-accent: #FFFFFF;
+  --shadow: rgba(43, 47, 42, 0.08);
+  --font-mark: "Cinzel", "Trajan Pro", "Times New Roman", serif;
+  --font-display: "Cormorant Garamond", "Iowan Old Style", Garamond, Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161A17; --card: #1F2420; --ink: #ECE7DC; --ink-2: #B4B8AE; --hair: #343A34;
+    --sage: #9DBBA5; --sage-wash: #243029; --flyer: #9DB7D0; --flyer-wash: #222C35; --runner: #D9A48A; --runner-wash: #33261F;
+    --gold: #C9A96E; --brass: #C9A96E; --vitrine: #101311; --on-accent: #161A17; --shadow: rgba(0, 0, 0, 0.3);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161A17; --card: #1F2420; --ink: #ECE7DC; --ink-2: #B4B8AE; --hair: #343A34;
+  --sage: #9DBBA5; --sage-wash: #243029; --flyer: #9DB7D0; --flyer-wash: #222C35; --runner: #D9A48A; --runner-wash: #33261F;
+  --gold: #C9A96E; --brass: #C9A96E; --vitrine: #101311; --on-accent: #161A17; --shadow: rgba(0, 0, 0, 0.3);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 17px; line-height: 1.7;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 56px;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--bg); z-index: 20; }
+a { color: var(--sage); }
+:focus-visible { outline: 2px solid var(--sage); outline-offset: 3px; }
+.wrap { max-width: 1060px; margin: 0 auto; }
+p { margin: 0 0 14px; }
+strong { font-weight: 600; }
+.label { font-family: var(--font-body); font-weight: 600; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); }
+
+/* The kasavu line: 1px, a 2px gap, 1px */
+.kasavu { height: 4px; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); }
+
+/* Header */
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 15; background: var(--bg);
+  margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+}
+.header-row { position: relative; max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 10px; padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); min-width: 0; }
+.brand img { width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 0 0 1px var(--gold); flex: none; }
+.brand-name { font-family: var(--font-mark); font-weight: 600; font-size: 15px; letter-spacing: 0.1em; line-height: 1.2; }
+.menu-btn { flex: none; width: 44px; height: 44px; display: grid; place-content: center; gap: 5px; background: transparent; border: 1px solid var(--ink-2); border-radius: 6px; cursor: pointer; }
+.menu-btn span { display: block; width: 20px; height: 2px; border-radius: 1px; background: var(--ink); transition: transform 0.2s, opacity 0.2s; }
+.menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+nav { position: absolute; top: calc(100% + 6px); right: max(16px, env(safe-area-inset-right, 0px)); z-index: 30; min-width: 240px; max-width: calc(100% - 32px); background: var(--card); border: 1px solid var(--hair); border-radius: 8px; box-shadow: 0 16px 40px var(--shadow); display: grid; padding: 6px; }
+nav[hidden] { display: none; }
+nav a { text-decoration: none; color: var(--ink); padding: 11px 14px; border-radius: 5px; font-size: 16px; }
+nav a:hover, nav a:focus-visible { background: var(--sage-wash); color: var(--sage); }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 28px 52px; align-items: center; padding-block: 64px 52px; }
+.medallion { width: clamp(160px, 24vw, 250px); aspect-ratio: 1; max-width: 100%; border-radius: 50%; padding: 7px; background: var(--card); box-shadow: 0 0 0 1px var(--gold), 0 0 0 4px var(--bg), 0 0 0 5px var(--gold), 0 20px 50px var(--shadow); }
+.medallion img { width: 100%; height: 100%; border-radius: 50%; display: block; }
+.lockup { min-width: 0; display: grid; gap: 8px; justify-items: start; }
+h1 { margin: 0; font-family: var(--font-mark); font-weight: 500; font-size: clamp(30px, 5.6vw, 58px); line-height: 1.1; letter-spacing: 0.06em; text-wrap: balance; }
+.memory { margin: 0; font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: clamp(22px, 2.8vw, 28px); line-height: 1.25; }
+.batch { margin: 0; color: var(--ink-2); font-size: 15px; letter-spacing: 0.04em; }
+.hero .kasavu { width: min(320px, 100%); margin: 12px 0 8px; }
+.lede { max-width: 58ch; margin: 0; color: var(--ink-2); }
+.next { display: inline-flex; flex-wrap: wrap; gap: 2px 12px; align-items: baseline; background: var(--sage-wash); border-radius: 6px; padding: 10px 16px; margin-top: 10px; font-size: 15px; }
+.next .label { color: var(--sage); }
+
+/* Sections */
+section { padding-block: 52px; scroll-margin-top: 80px; }
+.head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 30px; }
+.head > div { display: grid; gap: 2px; min-width: 0; }
+.head .label { color: var(--sage); }
+h2 { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: clamp(34px, 5vw, 46px); line-height: 1.08; text-wrap: balance; }
+h3 { margin: 0; }
+
+/* About + award plaques */
+.about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 36px 56px; align-items: start; }
+.prose { max-width: 62ch; min-width: 0; }
+.plaques { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(5, auto); column-gap: 20px; row-gap: 0; min-width: 0; }
+.plaque {
+  --tone: var(--flyer); --wash: var(--flyer-wash);
+  display: grid; grid-row: span 5; grid-template-rows: subgrid; justify-items: center; align-content: start; text-align: center; gap: 8px;
+  background: var(--card); border: 1px solid var(--hair); border-top: 3px solid var(--tone);
+  border-radius: 6px 6px 50% 50% / 6px 6px 16% 16%; padding: 26px 20px 44px; box-shadow: 0 10px 30px var(--shadow); min-width: 0;
+}
+.plaque.runner { --tone: var(--runner); --wash: var(--runner-wash); }
+.icon { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: var(--wash); color: var(--tone); }
+.icon svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.plaque h3 { font-family: var(--font-display); font-style: italic; font-weight: 600; font-size: clamp(24px, 2.4vw, 28px); text-wrap: balance; line-height: 1.1; color: var(--ink); }
+.plaque h3 span { display: block; font-family: var(--font-mark); font-style: normal; font-weight: 500; font-size: 12px; letter-spacing: 0.16em; color: var(--tone); margin-bottom: 4px; }
+.plaque .for { color: var(--ink-2); font-size: 15px; line-height: 1.4; }
+.plaque p { margin: 0; font-size: 15px; color: var(--ink-2); max-width: 26ch; align-self: start; }
+.plaque .prize { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1; color: var(--tone); }
+
+/* KP */
+.kp { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr); gap: 32px 56px; align-items: start; }
+.facts { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); border-top: 1px solid var(--hair); }
+.facts dt, .facts dd { margin: 0; padding: 11px 0; border-bottom: 1px solid var(--hair); }
+.facts dt { font-weight: 600; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); padding-right: 24px; padding-top: 14px; }
+.facts dd { min-width: 0; }
+blockquote { margin: 0 0 18px; padding-left: 18px; border-left: 2px solid var(--sage); font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: clamp(22px, 2.6vw, 27px); line-height: 1.35; }
+
+/* Recipients: certificate cards */
+.rosette { width: 54px; height: 70px; flex: none; color: var(--gold); }
+.rosette * { fill: none; stroke: currentColor; stroke-width: 1.2; }
+.register { display: grid; gap: 20px; }
+.cert {
+  background: var(--card); border-radius: 4px; padding: 26px 30px 22px; display: grid; gap: 18px; min-width: 0;
+  box-shadow: inset 0 0 0 8px var(--card), inset 0 0 0 9px var(--gold), inset 0 0 0 11px var(--card), inset 0 0 0 12px var(--gold), 0 8px 26px var(--shadow);
+}
+.cert-top { display: flex; justify-content: space-between; align-items: baseline; gap: 4px 20px; flex-wrap: wrap; }
+.cert-year { font-family: var(--font-display); font-weight: 600; font-size: 44px; line-height: 1; color: var(--brass); font-variant-numeric: lining-nums; }
+.cert-year small { font-family: var(--font-body); font-weight: 600; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); margin-left: 12px; vertical-align: middle; }
+.cert-ref { font-size: 13px; letter-spacing: 0.06em; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.cert-body { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 36px; }
+.cert-cell { min-width: 0; display: grid; gap: 2px; }
+.cert-cell .award { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--flyer); }
+.cert-cell.runner .award { color: var(--runner); }
+.cert-cell .award svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.cert-cell .who { font-family: var(--font-display); font-style: italic; font-weight: 600; font-size: 30px; line-height: 1.2; padding: 4px 0 6px; border-bottom: 1px dotted var(--ink-2); overflow-wrap: anywhere; }
+.cert-foot { display: flex; flex-wrap: wrap; gap: 2px 24px; font-size: 14px; color: var(--ink-2); }
+.cert.open { background: transparent; box-shadow: none; border: 1px dashed var(--ink-2); }
+.cert.open .cert-year { color: var(--ink-2); }
+.cert.open .who { font-family: var(--font-body); font-style: normal; font-weight: 400; font-size: 16px; color: var(--ink-2); border-bottom-color: var(--hair); }
+
+/* Image gallery */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 22px 18px; }
+.gallery figure { margin: 0; min-width: 0; display: grid; grid-template-rows: auto 1fr; gap: 10px; }
+.shot { display: block; width: 100%; padding: 6px; border: 1px solid var(--hair); border-radius: 4px; background: var(--card); cursor: zoom-in; }
+.shot:hover { border-color: var(--sage); }
+.shot img { display: block; width: 100%; max-width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px; background: var(--vitrine); }
+.shot img.contain { object-fit: contain; }
+.empty-shot { cursor: default; aspect-ratio: 4 / 3; display: grid; place-items: center; border: 1px dashed var(--ink-2); background: transparent; }
+.empty-shot:hover { border-color: var(--ink-2); }
+.empty-shot svg { width: 40px; height: 40px; fill: none; stroke: var(--ink-2); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; opacity: 0.7; }
+.placeholder figcaption b { color: var(--ink-2); }
+.gallery figcaption { font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+.gallery figcaption b { display: block; font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--brass); line-height: 1.2; }
+.gallery-note { margin: 22px 0 0; font-size: 15px; color: var(--ink-2); }
+dialog { border: 1px solid var(--hair); border-radius: 8px; background: var(--card); color: var(--ink); padding: 12px; max-width: min(1100px, 94vw); max-height: 92vh; }
+dialog::backdrop { background: rgba(22, 26, 23, 0.82); }
+dialog img { display: block; max-width: 100%; max-height: 76vh; margin: 0 auto; }
+.lb-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-top: 10px; }
+.lb-bar p { margin: 0; font-size: 15px; color: var(--ink-2); min-width: 0; }
+
+/* Selection */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.steps li { background: var(--card); border: 1px solid var(--hair); border-radius: 6px; padding: 20px 22px; min-width: 0; }
+.steps .label { color: var(--sage); }
+.steps h3 { font-family: var(--font-display); font-weight: 600; font-size: 26px; line-height: 1.15; margin: 4px 0 6px; }
+.steps p { color: var(--ink-2); font-size: 16px; margin: 0; }
+.criteria { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px; }
+.criteria span { background: var(--sage-wash); color: var(--ink); border-radius: 999px; padding: 5px 14px; font-size: 14px; }
+
+/* Nominations */
+.nom { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px 56px; align-items: start; }
+.nom-card { background: var(--card); border: 1px solid var(--hair); border-radius: 8px; padding: 24px 26px; display: grid; gap: 14px; min-width: 0; box-shadow: 0 8px 26px var(--shadow); }
+.status { justify-self: start; display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; padding: 4px 14px 4px 10px; font-weight: 600; font-size: 14px; background: var(--sage-wash); color: var(--sage); }
+.status::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
+.status.closed { background: var(--runner-wash); color: var(--runner); }
+.status.upcoming { background: var(--flyer-wash); color: var(--flyer); }
+.window { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); border-top: 1px solid var(--hair); }
+.window dt, .window dd { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--hair); }
+.window dt { font-size: 14px; color: var(--ink-2); padding-right: 24px; }
+.window dd { font-variant-numeric: tabular-nums; }
+.cta { justify-self: start; display: inline-block; text-decoration: none; background: var(--sage); color: var(--on-accent); font-weight: 600; border-radius: 6px; padding: 11px 20px; }
+.cta:hover { filter: brightness(1.08); }
+.cta[hidden], .form-embed[hidden] { display: none; }
+.nom-note { margin: 0; font-size: 15px; color: var(--ink-2); }
+.form-embed { margin-top: 28px; border: 1px solid var(--hair); border-radius: 8px; overflow: hidden; background: var(--card); }
+.form-embed iframe { display: block; width: 100%; height: 1400px; border: 0; }
+
+/* Timeline */
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; border-left: 1px solid var(--hair); }
+.timeline li { padding-left: 24px; position: relative; min-width: 0; }
+.timeline li::before { content: ""; position: absolute; left: -5px; top: 8px; width: 9px; height: 9px; border-radius: 50%; background: var(--bg); border: 1.5px solid var(--sage); }
+.timeline li.next-up::before { background: var(--sage); }
+.timeline .label { color: var(--sage); }
+.timeline p { margin: 2px 0 0; }
+
+/* Support */
+.support { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px 56px; align-items: start; }
+.give { background: var(--card); border: 1px solid var(--hair); border-radius: 8px; padding: 24px 26px; min-width: 0; display: grid; gap: 10px; box-shadow: 0 8px 26px var(--shadow); }
+.give .label { color: var(--sage); }
+.give .label + .give-rows { margin-bottom: 14px; }
+.give-rows { margin: 0; display: grid; border-top: 1px solid var(--hair); }
+.give-row { display: flex; align-items: center; justify-content: space-between; gap: 6px 14px; flex-wrap: wrap; padding: 10px 0; border-bottom: 1px solid var(--hair); min-width: 0; }
+.give-row dt { font-size: 14px; color: var(--ink-2); }
+.give-row dd { margin: 0; overflow-wrap: anywhere; min-width: 0; display: flex; align-items: center; gap: 10px; font-variant-numeric: tabular-nums; }
+.give-row dd.tbd { color: var(--ink-2); font-style: italic; }
+.btn { font-family: var(--font-body); font-weight: 600; font-size: 13px; background: var(--sage); color: var(--on-accent); border: 0; border-radius: 5px; padding: 6px 12px; cursor: pointer; }
+.btn:hover { filter: brightness(1.08); }
+
+footer { display: grid; gap: 20px; }
+.foot-row { display: flex; align-items: center; justify-content: space-between; gap: 14px 32px; flex-wrap: wrap; font-size: 15px; color: var(--ink-2); }
+.foot-row .who { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.foot-row img { width: 44px; height: 44px; border-radius: 50%; box-shadow: 0 0 0 1px var(--gold); flex: none; }
+.foot-row .mark { font-family: var(--font-mark); font-weight: 600; font-size: 13px; letter-spacing: 0.1em; color: var(--ink); }
+
+@media (max-width: 820px) {
+  .about, .kp, .support, .nom { grid-template-columns: minmax(0, 1fr); }
+  .steps { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .hero { grid-template-columns: minmax(0, 1fr); padding-block: 40px 28px; }
+  .plaques { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; row-gap: 20px; max-width: 380px; }
+  .plaque { grid-row: auto; grid-template-rows: none; }
+  .cert { padding: 24px 24px 20px; }
+  .cert-body { grid-template-columns: minmax(0, 1fr); }
+  .rosette { display: none; }
+  .brand-name { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .menu-btn span { transition: none; }
+}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5.5c3-1.2 6-1.2 9 .8 3-2 6-2 9-.8V19c-3-1.2-6-1.2-9 .8-3-2-6-2-9-.8z"/><path d="M12 6.3v13.5"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3c.9 3.4 5 5.4 5 10.2A5 5 0 0 1 7 13.2c0-2.4 1.4-3.8 2.4-5 .3 1.6 1 2.6 2 3.1-.4-3 .1-5.6.6-8.3z"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="header-row">
+    <a class="brand" href="#top" aria-label="KP Memorial Award, home">
+      <img src="img/kp-mark-2.webp" alt="KP Memorial Award emblem" width="40" height="40">
+      <span class="brand-name">KP Memorial Award</span>
+    </a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" aria-label="Sections" hidden>
+      <a href="#about">The awards</a>
+      <a href="#krishnaprasad">About KP</a>
+      <a href="#recipients">Recipients</a>
+      <a href="#gallery">Image gallery</a>
+      <a href="#selection">Selection</a>
+      <a href="#nominations">Nominations</a>
+      <a href="#journey">Timeline</a>
+      <a href="#support">Support the award</a>
+    </nav>
+  </div>
+  <div class="kasavu"></div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <div class="medallion"><img src="img/kp-medallion-2.webp" alt="Portrait of Krishnaprasad K.T., the KP Memorial Award emblem" width="250" height="250"></div>
+    <div class="lockup">
+      <div class="label">NSS College of Engineering, Palakkad</div>
+      <h1>KP Memorial Awards</h1>
+      <p class="memory">In memory of Krishnaprasad KT (1987–2008)</p>
+      <p class="batch">Mechanical Engineering 2004–08 Batch, NSSCE</p>
+      <div class="kasavu" aria-hidden="true"></div>
+      <p class="lede">Two deserving Mechanical Engineering students are honoured at each ceremony: the High Flyer Award for excellence in academics and the High Runner Award for excellence in extra-curriculars. Each award carries <strong>₹20,000</strong>, a certificate and a crystal trophy.</p>
+      <div class="next"><span class="label">Next ceremony</span><span>December 2026 · Mechanical Engineering Department, NSSCE</span></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="head"><div><span class="label">The awards</span><h2>Two awards, one memory</h2></div></div>
+    <div class="about">
+      <div class="prose">
+        <p>The KP Memorial Award was instituted by the 2004–08 Mechanical Engineering alumni of NSS College of Engineering in memory of their batchmate. It recognises deserving students who do well in their studies and who also give their time to technical and extra-curricular work.</p>
+        <p>The awards are given by the board of trustees of the KP Memorial Trust, on the recommendation of the KP Memorial Award Council, together with the Department of Mechanical Engineering.</p>
+        <p>Recipients are presented with a cash award, a Certificate of Scholarship and an engraved crystal trophy at a ceremony in the department.</p>
+      </div>
+      <div class="plaques">
+        <article class="plaque flyer">
+          <div class="icon"><svg><use href="#i-book"/></svg></div>
+          <h3><span>KP Memorial</span>High Flyer Award</h3>
+          <div class="for">For excellence in academics</div>
+          <p>Weighted towards the academic record and technical work.</p>
+          <div class="prize">₹20,000</div>
+        </article>
+        <article class="plaque runner">
+          <div class="icon"><svg><use href="#i-flame"/></svg></div>
+          <h3><span>KP Memorial</span>High Runner Award</h3>
+          <div class="for">For excellence in extra-curriculars</div>
+          <p>Weighted towards activities, innovation and faculty feedback.</p>
+          <div class="prize">₹20,000</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="krishnaprasad">
+    <div class="head"><div><span class="label">In memoriam</span><h2>Krishnaprasad K.T.</h2></div></div>
+    <div class="kp">
+      <dl class="facts">
+        <dt>Born</dt><dd>30 May 1987</dd>
+        <dt>From</dt><dd>Aripra, Malappuram, Kerala</dd>
+        <dt>Studied</dt><dd>B.Tech Mechanical Engineering, NSS College of Engineering, Palakkad</dd>
+        <dt>Batch</dt><dd>2004–08</dd>
+        <dt>Passed away</dt><dd>2008</dd>
+      </dl>
+      <div class="prose">
+        <blockquote>We fondly remember him as a passionate student and a source of inspiration for us all.</blockquote>
+        <p>KP, as his classmates called him, was brilliant throughout his college years, in academics and in extra-curricular activities alike. His tireless energy and his straightforward, friendly way with people are what his batchmates remember most.</p>
+        <p>His sudden death in a bus accident in 2008 left a gap that his friends have never filled. The KP Memorial Award celebrates his life by encouraging students who share his spirit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="recipients">
+    <div class="head">
+      <div><span class="label">Register of awards</span><h2>Recipients</h2></div>
+      <svg class="rosette" viewBox="0 0 54 70" aria-hidden="true">
+        <path d="M17 38 L10 66 L18 60 L23 68 L27 42"/><path d="M37 38 L44 66 L36 60 L31 68 L27 42"/>
+        <circle cx="27" cy="25" r="22"/><circle cx="27" cy="25" r="16"/><circle cx="27" cy="25" r="10"/>
+      </svg>
+    </div>
+    <div class="register" id="register"></div>
+  </section>
+
+  <section id="gallery">
+    <div class="head"><div><span class="label">From the ceremonies</span><h2>Image gallery</h2></div></div>
+    <div class="gallery" id="gallery-grid"></div>
+    <p class="gallery-note">Photographs from past ceremonies and from December 2026 will be added here.</p>
+  </section>
+
+  <section id="selection">
+    <div class="head"><div><span class="label">Selection</span><h2>How recipients are chosen</h2></div></div>
+    <ol class="steps">
+      <li><div class="label">Step 1 · Faculty</div><h3>Shortlist</h3><p>Faculty of the Mechanical Engineering department shortlist candidates from the fifth and seventh semester classes.</p></li>
+      <li><div class="label">Step 2 · Award council</div><h3>Review</h3><p>The award council reviews each candidate's academic record, technical work and extra-curricular achievements.</p></li>
+      <li><div class="label">Step 3 · Alumni</div><h3>Interview and select</h3><p>Alumni meet the candidates and recommend one deserving student for each award.</p></li>
+    </ol>
+    <div class="criteria" aria-label="What is considered">
+      <span>Academic record</span><span>Backlog history</span><span>Technical contributions</span><span>Extra-curricular achievements</span><span>Faculty feedback</span><span>Alumni interview</span>
+    </div>
+  </section>
+
+  <section id="nominations">
+    <div class="head"><div><span class="label">For shortlisted students</span><h2>Nominations</h2></div></div>
+    <div class="nom">
+      <div class="prose">
+        <p>Each year the Mechanical Engineering department shortlists candidates for the High Flyer and High Runner awards. Shortlisted students then fill in a short nomination form with their contact details, academic record, achievements and scholarships.</p>
+        <p>The form is open only during the nomination window. Entries go directly to the KP Memorial Award Council and are not published.</p>
+        <p>If you have been shortlisted and have trouble with the form, please contact the Mechanical Engineering department office.</p>
+      </div>
+      <div class="nom-card" aria-live="polite">
+        <span class="status" id="nom-status">Checking</span>
+        <dl class="window">
+          <dt>Opens</dt><dd id="nom-open"></dd>
+          <dt>Closes</dt><dd id="nom-close"></dd>
+        </dl>
+        <a class="cta" id="nom-cta" href="#" target="_blank" rel="noopener" hidden>Open the nomination form</a>
+        <p class="nom-note" id="nom-note"></p>
+      </div>
+    </div>
+    <div class="form-embed" id="nom-embed" hidden></div>
+  </section>
+
+  <section id="journey">
+    <div class="head"><div><span class="label">Timeline</span><h2>The journey so far</h2></div></div>
+    <ul class="timeline">
+      <li><div class="label">2015</div><p>The 2004–08 alumni first write to the college proposing an award in KP's memory.</p></li>
+      <li><div class="label">8 July 2023</div><p>The award is introduced at the batch reunion, with the Principal's consent.</p></li>
+      <li><div class="label">5 December 2023</div><p>The first High Flyer and High Runner awards are presented at NSSCE, Palakkad.</p></li>
+      <li><div class="label">17 December 2024</div><p>The second ceremony, with Certificates of Scholarship issued by the KP Memorial Trust.</p></li>
+      <li class="next-up"><div class="label">December 2026</div><p>The next ceremony is planned. The department will identify two students from the S5 and S7 classes.</p></li>
+    </ul>
+  </section>
+
+  <section id="support">
+    <div class="head"><div><span class="label">Contributions</span><h2>Support the award</h2></div></div>
+    <div class="support">
+      <div class="prose">
+        <p>The award is funded by the 2004–08 batch through the KP Memorial Trust. Friends, classmates, faculty and well-wishers are welcome to contribute so that it continues for years to come.</p>
+        <p><strong>Give any amount</strong> you are comfortable with, by UPI or bank transfer. Every contribution helps recognise a deserving student.</p>
+        <p>After you pay, please share the transaction reference with the alumni team so your contribution can be recorded and acknowledged.</p>
+      </div>
+      <div class="give">
+        <div class="label">Pay by UPI</div>
+        <dl class="give-rows" id="upi-rows"></dl>
+        <div class="label">Pay by bank transfer</div>
+        <dl class="give-rows" id="bank-rows"></dl>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="kasavu" aria-hidden="true"></div>
+    <div class="foot-row">
+      <div class="who">
+        <img src="img/kp-mark-2.webp" alt="" width="44" height="44">
+        <div>
+          <div class="mark">KP Memorial Award</div>
+          <div>Instituted by the Mechanical Engineering alumni, 2004–08 batch, NSS College of Engineering, Palakkad.</div>
+        </div>
+      </div>
+      <div class="label">Draft for review</div>
+    </div>
+  </footer>
+</main>
+
+<dialog id="lb" aria-label="Photograph">
+  <img id="lb-img" src="" alt="">
+  <div class="lb-bar"><p id="lb-cap"></p><button class="btn" id="lb-close" type="button">Close</button></div>
+</dialog>
+
+<script>
+/* Image gallery: one list for all years, newest first. Add photos as
+   { year: 2026, src: "img/file.jpg", caption: "text" }; add fit: "contain" to show a photo uncropped.
+   While the list is empty, the gallery shows placeholder frames. */
+var PHOTOS = [];
+var PLACEHOLDERS = 4;   /* empty frames shown until photos are added */
+
+var AWARDS = [
+  { year: 2026, session: "2026–27", open: true, date: "December 2026 (planned)", venue: "Mechanical Engineering Department, NSSCE",
+    flyer: null, runner: null, empty: "To be announced after selection" },
+  { year: 2024, session: "2024–25", date: "17 December 2024", venue: "Seminar Hall, Mechanical Engineering Department",
+    flyer: "Sathyajith Narayanan", runner: "Sarath Chandran R", ref: "Ref. KP2024HF01 · KP2024HR01" },
+  { year: 2023, session: "2023–24", date: "5 December 2023", venue: "Seminar Hall, Mechanical Engineering Department",
+    flyer: "Vaibhav V Ramalingam", runner: "Shithin Prakash C" }
+];
+
+function el(tag, cls, text) {
+  var e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text) e.textContent = text;
+  return e;
+}
+function awardCell(kind, title, icon, name, empty) {
+  var c = el("div", "cert-cell " + kind);
+  var t = el("div", "award");
+  t.innerHTML = '<svg aria-hidden="true"><use href="#' + icon + '"/></svg>';
+  t.appendChild(document.createTextNode(title));
+  c.appendChild(t);
+  c.appendChild(el("div", "who", name || empty));
+  return c;
+}
+
+var register = document.getElementById("register");
+AWARDS.forEach(function (a) {
+  var card = el("article", "cert" + (a.open ? " open" : ""));
+  var top = el("div", "cert-top");
+  var y = el("div", "cert-year", String(a.year));
+  y.appendChild(el("small", "", "Award year " + a.session));
+  top.appendChild(y);
+  if (a.ref) top.appendChild(el("div", "cert-ref", a.ref));
+  card.appendChild(top);
+  var body = el("div", "cert-body");
+  body.appendChild(awardCell("flyer", "High Flyer Award", "i-book", a.flyer, a.empty));
+  body.appendChild(awardCell("runner", "High Runner Award", "i-flame", a.runner, a.empty));
+  card.appendChild(body);
+  var f = el("div", "cert-foot");
+  f.appendChild(el("span", "", a.date));
+  if (a.venue) f.appendChild(el("span", "", a.venue));
+  card.appendChild(f);
+  register.appendChild(card);
+});
+
+var lb = document.getElementById("lb"), lbImg = document.getElementById("lb-img"), lbCap = document.getElementById("lb-cap");
+function openLb(p) {
+  lbImg.src = p.src; lbImg.alt = p.caption; lbCap.textContent = p.year + " · " + p.caption;
+  try { lb.showModal(); } catch (e) { lb.setAttribute("open", ""); }
+}
+document.getElementById("lb-close").addEventListener("click", function () { lb.close(); });
+lb.addEventListener("click", function (e) { if (e.target === lb) lb.close(); });
+
+var grid = document.getElementById("gallery-grid");
+PHOTOS.forEach(function (p) {
+  var fig = el("figure");
+  var b = el("button", "shot"); b.type = "button"; b.setAttribute("aria-label", "Enlarge: " + p.caption + ", " + p.year);
+  var img = document.createElement("img");
+  img.src = p.src; img.alt = p.caption; img.loading = "lazy";
+  if (p.fit === "contain") img.className = "contain";
+  b.appendChild(img);
+  b.addEventListener("click", function () { openLb(p); });
+  fig.appendChild(b);
+  var cap = el("figcaption");
+  cap.appendChild(el("b", "", String(p.year)));
+  cap.appendChild(document.createTextNode(p.caption));
+  fig.appendChild(cap);
+  grid.appendChild(fig);
+});
+if (!PHOTOS.length) {
+  for (var i = 0; i < PLACEHOLDERS; i++) {
+    var ph = el("figure", "placeholder");
+    var frame = el("div", "shot empty-shot");
+    frame.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 17l5-4.5 3.5 3 3-2.5L20 17"/></svg>';
+    ph.appendChild(frame);
+    var c = el("figcaption");
+    c.appendChild(el("b", "", "Year"));
+    c.appendChild(document.createTextNode("Photograph to be added"));
+    ph.appendChild(c);
+    grid.appendChild(ph);
+  }
+}
+
+/* Nominations window. Keep these dates the same as OPENS_AT and CLOSES_AT in the Apps Script that opens and closes the Google Form.
+   Times are India Standard Time. Set EMBED_FORM to true once the site is hosted on its own address (GitHub Pages, Cloudflare Pages or the NAS);
+   inside a Claude artifact other sites cannot be embedded, so the page shows a button instead. */
+var NOMINATIONS = {
+  opensAt: "2026-11-20T09:00:00+05:30",
+  closesAt: "2026-11-30T23:59:00+05:30",
+  formUrl: "https://docs.google.com/forms/d/1vUF2WInzrkfGasW3CvVxwh1DZ63M_jB0C94PmIVgct4/viewform",
+  EMBED_FORM: true
+};
+(function () {
+  var open = new Date(NOMINATIONS.opensAt), close = new Date(NOMINATIONS.closesAt), now = new Date();
+  var fmt = function (d) {
+    try {
+      return d.toLocaleString("en-IN", { timeZone: "Asia/Kolkata", day: "numeric", month: "long", year: "numeric", hour: "numeric", minute: "2-digit" }) + " IST";
+    } catch (e) { return d.toString(); }
+  };
+  document.getElementById("nom-open").textContent = fmt(open);
+  document.getElementById("nom-close").textContent = fmt(close);
+  var st = document.getElementById("nom-status"), note = document.getElementById("nom-note"), cta = document.getElementById("nom-cta");
+  if (now < open) {
+    st.textContent = "Opens soon"; st.className = "status upcoming";
+    note.textContent = "The form will open on " + fmt(open) + ". The department will tell shortlisted students when it opens.";
+  } else if (now <= close) {
+    st.textContent = "Open now"; st.className = "status";
+    note.textContent = "Please submit before " + fmt(close) + ". You can edit your answers after submitting.";
+    cta.href = NOMINATIONS.formUrl; cta.hidden = false;
+    if (NOMINATIONS.EMBED_FORM) {
+      var box = document.getElementById("nom-embed");
+      var f = document.createElement("iframe");
+      f.src = NOMINATIONS.formUrl + "?embedded=true"; f.title = "KP Memorial Award nomination form"; f.loading = "lazy";
+      box.appendChild(f); box.hidden = false;
+    }
+  } else {
+    st.textContent = "Closed"; st.className = "status closed";
+    note.textContent = "Nominations for this year have closed. Thank you to everyone who applied.";
+  }
+})();
+
+/* Contribution details: fill these in with the KP Memorial Trust's account. Empty values show "To be added". */
+var UPI = [
+  ["UPI ID", ""],
+  ["Payee name", ""]
+];
+var BANK = [
+  ["Account name", ""],
+  ["Account number", ""],
+  ["IFSC", ""],
+  ["Bank and branch", ""]
+];
+function fillRows(id, rows) {
+  var dl = document.getElementById(id);
+  rows.forEach(function (r) {
+    var row = el("div", "give-row");
+    row.appendChild(el("dt", "", r[0]));
+    var dd = el("dd", r[1] ? "" : "tbd");
+    dd.appendChild(el("span", "", r[1] || "To be added"));
+    if (r[1]) {
+      var b = el("button", "btn", "Copy");
+      b.type = "button";
+      b.addEventListener("click", function () {
+        var done = function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy"; }, 1500); };
+        var fallback = function () { try { var s = window.getSelection(), rg = document.createRange(); rg.selectNodeContents(dd.firstChild); s.removeAllRanges(); s.addRange(rg); } catch (e) {} };
+        try { navigator.clipboard.writeText(r[1]).then(done, fallback); } catch (e) { fallback(); }
+      });
+      dd.appendChild(b);
+    }
+    row.appendChild(dd);
+    dl.appendChild(row);
+  });
+}
+fillRows("upi-rows", UPI);
+fillRows("bank-rows", BANK);
+
+/* Menu */
+var btn = document.getElementById("menu-btn");
+var menu = document.getElementById("menu");
+function setMenu(open) {
+  menu.hidden = !open;
+  btn.setAttribute("aria-expanded", open ? "true" : "false");
+  btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+}
+btn.addEventListener("click", function () { setMenu(menu.hidden); });
+menu.addEventListener("click", function (e) { if (e.target.tagName === "A") setMenu(false); });
+document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !menu.hidden) { setMenu(false); btn.focus(); } });
+document.addEventListener("click", function (e) { if (!menu.hidden && !menu.contains(e.target) && !btn.contains(e.target)) setMenu(false); });
+</script>
+
+</body>
+</html>
